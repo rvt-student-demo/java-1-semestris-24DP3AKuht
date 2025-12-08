@@ -2,10 +2,10 @@ package rvt;
 
 public class PaymentCard {
 
-    public static class PaymentCard {
+    static class PaymentCards {
         private double balance;
 
-        public PaymentCard(double openingBalance) {
+        public PaymentCards(double openingBalance) {
             this.balance = openingBalance;
         }
 
@@ -44,8 +44,8 @@ public class PaymentCard {
 
         public static void main(String[] args) {
 
-            PaymentCard paulsCard = new PaymentCard(20);
-            PaymentCard mattsCard = new PaymentCard(30);
+            PaymentCards paulsCard = new PaymentCards(20);
+            PaymentCards mattsCard = new PaymentCards(30);
 
             paulsCard.eatHeartily();
 
@@ -70,3 +70,4 @@ public class PaymentCard {
             System.out.println("Matt: " + mattsCard);
     }
 }
+
