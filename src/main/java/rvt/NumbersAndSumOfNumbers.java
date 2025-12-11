@@ -4,14 +4,14 @@ import java.util.Scanner;
 
 public class NumbersAndSumOfNumbers {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int sk;
+        Scanner scanner = new Scanner(System.in);
+        String sk;
 
         System.out.println("Ievadiet skaitli: ");
 
 
         while (true) {
-            sk = sc.nextLine();
+            sk = scanner.nextLine();
 
             if (sk == 0) {
                 System.out.println("Programma beidzas");
@@ -21,6 +21,6 @@ public class NumbersAndSumOfNumbers {
             System.out.println("Jus ievadijat" + sk);
         }
 
-        sc.close();
+        scanner.close();
     }
 }
