@@ -6,7 +6,7 @@ public class SecondsInDay {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Ievadiet dienu skaitu: ")
+        System.out.print("Ievadiet dienu skaitu: ");
         int days = scanner.nextInt();
 
         int seconds = days * 24 * 60 * 60;
@@ -15,3 +15,4 @@ public class SecondsInDay {
     }
     
 }
+
