@@ -3,12 +3,13 @@ import java.util.ArrayList;
 
 public class RemoveLast {
 
-public static void removeLast(ArrayList strings) {
+public static void removeLast(@SuppressWarnings("rawtypes") ArrayList strings) {
     if (!strings.isEmpty()) {
         strings.remove(strings.size() - 1);
         }
         }
 
+        @SuppressWarnings({ "unchecked", "rawtypes" })
         public static void main(String[] args) {
         ArrayList strings = new ArrayList<>();
 
