@@ -27,3 +27,4 @@ public class statistic {
         System.out.println("Count: " + statistic.getCount());
     }
 }
+
