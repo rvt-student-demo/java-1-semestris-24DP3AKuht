@@ -19,9 +19,9 @@ public class Chapter44 {
             System.out.println("---End of this task---");
         }
         public static void ex1() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Enter your name: ");
-            String full = sc.nextLine().trim();
+            String full = scanner.nextLine().trim();
 
             int space = full.indexOf(" ");
             if (space <= 0) {
@@ -35,20 +35,20 @@ public class Chapter44 {
             System.out.println(first + " " + last);
         }
         public static void ex2() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.println("Enter a string:");
-            String s = sc.nextLine();
+            String s = scanner.nextLine();
 
             for (int i = 0; i < s.length(); i++) {
                 System.out.println(s.charAt(i));
             }
         }
         public static void ex3() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
 
             while (true) {
                 System.out.println("Enter a name:");
-                String line = sc.nextLine();
+                String line = scanner.nextLine();
 
                 if (line.length() == 0) break;
 
@@ -65,9 +65,9 @@ public class Chapter44 {
             }
         }
         public static void ex4() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Enter cook time-> ");
-            String s = sc.nextLine();
+            String s = scanner.nextLine();
 
             int len = s.length();
 
@@ -84,20 +84,20 @@ public class Chapter44 {
             System.out.println("Your time-> " + minutes + ":" + String.format("%02d", seconds));
         }
         public static void ex5() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
 
             while (sc.hasNextLine()) {
-                String line = sc.nextLine();
+                String line = scanner.nextLine();
                 if (line.startsWith("//"))
                     System.out.println(line);
             }
         }
         public static void ex6() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
 
              while (true) {
                 System.out.println("Enter your password:");
-                String pass = sc.nextLine();
+                String pass = scanner.nextLine();
 
                 if (isAcceptable(pass)) {
                     System.out.println("Acceptable password.");
@@ -118,9 +118,9 @@ public class Chapter44 {
             return hasUpper && hasLower && hasDigit;
         }
         public static void ex7() {
-            Scanner sc = new Scanner(System.in);
+            Scanner scanner = new Scanner(System.in);
             System.out.print("Enter a word -->");
-            String w = sc.nextLine();
+            String w = scanner.nextLine();
 
             int spaces = 0;
 
@@ -134,3 +134,4 @@ public class Chapter44 {
             }
     }
 }
+
