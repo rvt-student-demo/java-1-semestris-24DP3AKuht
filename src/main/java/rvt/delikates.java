@@ -10,14 +10,20 @@ public class delikates {
         String prece = scanner.nextLine();
 
         System.out.print("Ievdi cenu: ");
-        int cena = scanner.nextLine();
+        int cena = Integer.parseInt(scanner.nextLine());
 
         System.out.print("Ekspress piegade (0==ne, 1==ja):");
         int ekspress = scanner.nextInt();
 
-        if(cena < 10);
+        if (ekspress == 1) {
+            cena += 2;
+        }
+
+        System.out.println("Preces: " + prece);
+        System.out.println("Galīgā cena: " + cena + " vienības");
 
     }
     
     
 }
+
