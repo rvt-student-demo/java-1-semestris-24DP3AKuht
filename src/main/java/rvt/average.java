@@ -11,5 +11,8 @@ public class average {
 
         double avg = (a + b + c) / 3.0; 
         System.out.println("Average: " + avg);
+
+        scanner.close();
     }
+    
 }
