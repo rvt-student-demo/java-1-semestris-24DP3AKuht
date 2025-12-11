@@ -18,3 +18,4 @@ public class ListSize {
         System.out.println("In total: " + names.size());
     }
 }
+
